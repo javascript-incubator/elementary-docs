@@ -6,10 +6,7 @@
   "dependencies": {
     "@elementary/components": "^0.5.2",
     "@elementary/proper": "^0.2.5",
-    "@mdx-js/mdx": "^0.16.6",
-    "@mdx-js/tag": "^0.16.6",
     "gatsby": "^2.0.0",
-    "gatsby-mdx": "^0.3.2",
     "gatsby-plugin-google-fonts": "^0.0.4",
     "gatsby-plugin-manifest": "^2.0.2",
     "gatsby-plugin-offline": "^2.0.5",
@@ -18,7 +15,9 @@
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0"
   },
-  "keywords": ["gatsby"],
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "scripts": {
     "start": "gatsby develop",
