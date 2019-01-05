@@ -26,7 +26,8 @@ const Item = ({ C, name, linkName }) => (
     alignItems="center"
     transition="all 0.4s ease"
     style={{ cursor: 'pointer' }}
-    onClick={_ => window.open('/docs/' + (linkName || name))}
+    is={Link}
+    to={'/docs/' + (linkName || name)}
   >
     <Text fontWeight="700" tt="uppercase" m="20px">
       {name}
