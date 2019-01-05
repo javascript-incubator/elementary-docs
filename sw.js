@@ -26,17 +26,17 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-2e086dbf5b848c34e401.js"
+    "url": "webpack-runtime-13087db9d88ac3629315.js"
   },
   {
-    "url": "app-313a575a60f90388afa0.js"
+    "url": "app-cd97e3e315f932aaa0b5.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-c25225dbf447dccc0793.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "5f9a7f9e67700afbe33d67f9c2fa0dd9"
+    "revision": "4cdde863f2efd541dba3eb75e7e75089"
   },
   {
     "url": "component---src-pages-404-js.29bc7bee3bcda03eb16a.css"
@@ -45,7 +45,7 @@ self.__precacheManifest = [
     "url": "component---src-pages-404-js-705b41b47c2b613b87d9.js"
   },
   {
-    "url": "0-9b60236301c2fa40615d.js"
+    "url": "0-22a8b7084d15a290e88c.js"
   },
   {
     "url": "static/d/164/path---404-html-516-62a-NZuapzHg3X9TaN1iIixfv1W23E.json"
@@ -76,7 +76,7 @@ const navigationRoute = new workbox.routing.NavigationRoute(({ event }) => {
   return idbKeyval.get(WHITELIST_KEY).then((customWhitelist = []) => {
     // Respond with the offline shell if we match the custom whitelist
     if (customWhitelist.includes(pathname)) {
-      const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
+      const offlineShell = `/elementary-docs/offline-plugin-app-shell-fallback/index.html`
       const cacheName = workbox.core.cacheNames.precache
 
       return caches.match(offlineShell, { cacheName }).then(cachedResponse => {
@@ -145,7 +145,7 @@ const messageApi = {
 
     pathnames = pathnames.map(({ pathname, includesPrefix }) => {
       if (!includesPrefix) {
-        return `${pathname}`
+        return `/elementary-docs${pathname}`
       } else {
         return pathname
       }
