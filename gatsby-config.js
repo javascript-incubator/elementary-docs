@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Elementary',
   },
+  pathPrefix: '/elementary-docs',
   plugins: [
     'gatsby-plugin-react-helmet',
     {
