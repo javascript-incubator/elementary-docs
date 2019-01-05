@@ -2,7 +2,7 @@ import React from 'react'
 import { Flex, Text, Link } from '@elementary/components'
 import theme from './theme'
 
-const OutLink = props => (
+export const OutLink = props => (
   <Link
     textTransform="uppercase"
     color="white"
@@ -24,16 +24,35 @@ export default _ => (
     px="30px"
   >
     <Flex>
-      <Flex justifyContent="center" alignItems="center" flexDirection="column" p="10px">
+      <Flex
+        justifyContent="center"
+        alignItems="center"
+        flexDirection="column"
+        p="10px"
+      >
         <Text textTransform="uppercase" f="16px">
           MIT Licensed
         </Text>
       </Flex>
-      <Flex justifyContent="center" alignItems="center" flexDirection="column" p="10px">
-        <OutLink href="https://github.com/rajatsharma/elementary/issues">Report Issues</OutLink>
+      <Flex
+        justifyContent="center"
+        alignItems="center"
+        flexDirection="column"
+        p="10px"
+      >
+        <OutLink href="https://github.com/rajatsharma/elementary/issues">
+          Report Issues
+        </OutLink>
       </Flex>
-      <Flex justifyContent="center" alignItems="center" flexDirection="column" p="10px">
-        <OutLink href="https://github.com/rajatsharma/elementary">Github</OutLink>
+      <Flex
+        justifyContent="center"
+        alignItems="center"
+        flexDirection="column"
+        p="10px"
+      >
+        <OutLink href="https://github.com/rajatsharma/elementary">
+          Github
+        </OutLink>
       </Flex>
     </Flex>
     <Flex>© {new Date().getFullYear()} Rajat Sharma</Flex>
