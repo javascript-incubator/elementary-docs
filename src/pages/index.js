@@ -45,6 +45,14 @@ const IndexPage = () => (
         <Text color={theme.colors.light} textAlign="center">
           Precomposed Lenses so you can apply styles as props.
         </Text>
+        <Text
+          bg="unset"
+          color={theme.colors.black}
+          textAlign="center"
+          is="code"
+        >
+          yarn add @elementary/standard
+        </Text>
       </Flex>
       <Flex
         justifyContent="center"
@@ -58,6 +66,14 @@ const IndexPage = () => (
         <Text color={theme.colors.light} textAlign="center">
           React Components you can use in your daily programmming
         </Text>
+        <Text
+          bg="unset"
+          color={theme.colors.black}
+          textAlign="center"
+          is="code"
+        >
+          yarn add @elementary/components
+        </Text>
       </Flex>
       <Flex
         justifyContent="center"
@@ -70,6 +86,14 @@ const IndexPage = () => (
         <Text textTransform="uppercase">Proper</Text>
         <Text color={theme.colors.light} textAlign="center">
           Functional Lenses powering Standard and Components
+        </Text>
+        <Text
+          bg="unset"
+          color={theme.colors.black}
+          textAlign="center"
+          is="code"
+        >
+          yarn add @elementary/proper
         </Text>
       </Flex>
     </Flex>
