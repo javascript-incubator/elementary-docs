@@ -27,10 +27,6 @@ const Item = ({ C, name, linkName }) => (
     transition="all 0.4s ease"
     style={{ cursor: 'pointer' }}
     onClick={_ => window.open('/docs/' + (linkName || name))}
-    hover={{
-      background: theme.colors.black,
-      color: theme.colors.white + ' !important',
-    }}
   >
     <Text fontWeight="700" tt="uppercase" m="20px">
       {name}

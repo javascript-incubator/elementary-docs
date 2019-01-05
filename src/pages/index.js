@@ -11,30 +11,61 @@ import theme from '../components/theme'
 const IndexPage = () => (
   <Layout>
     {/* Heading */}
-    <Flex alignItems="center" justifyContent="center" h="500px" flexDirection="column">
+    <Flex
+      alignItems="center"
+      justifyContent="center"
+      h="500px"
+      flexDirection="column"
+    >
       {/* <img src={Prism} height="70px" /> */}
-      <Text f="72px" fontWeight="700" textTransform="uppercase" ml="10px" mb="20px">
+      <Text
+        f="72px"
+        fontWeight="700"
+        textTransform="uppercase"
+        ml="10px"
+        mb="20px"
+      >
         Elementary
       </Text>
-      <Text color={theme.colors.light}>Ultracommon Components powered by Optimized Lenses</Text>
+      <Text color={theme.colors.light}>
+        Ultracommon Components powered by Optimized Lenses
+      </Text>
     </Flex>
     {/* Components */}
     <Flex justifyContent="space-between">
-      <Flex justifyContent="center" alignItems="center" flexDirection="column" w="33%" p="10px">
+      <Flex
+        justifyContent="center"
+        alignItems="center"
+        flexDirection="column"
+        w="33%"
+        p="10px"
+      >
         <img src={Prism} height="70px" />
         <Text textTransform="uppercase">Standard</Text>
         <Text color={theme.colors.light} textAlign="center">
           Precomposed Lenses so you can apply styles as props.
         </Text>
       </Flex>
-      <Flex justifyContent="center" alignItems="center" flexDirection="column" w="33%" p="10px">
+      <Flex
+        justifyContent="center"
+        alignItems="center"
+        flexDirection="column"
+        w="33%"
+        p="10px"
+      >
         <img src={Optometry} height="70px" />
         <Text textTransform="uppercase">Components</Text>
         <Text color={theme.colors.light} textAlign="center">
           React Components you can use in your daily programmming
         </Text>
       </Flex>
-      <Flex justifyContent="center" alignItems="center" flexDirection="column" w="33%" p="10px">
+      <Flex
+        justifyContent="center"
+        alignItems="center"
+        flexDirection="column"
+        w="33%"
+        p="10px"
+      >
         <img src={Lens} height="70px" />
         <Text textTransform="uppercase">Proper</Text>
         <Text color={theme.colors.light} textAlign="center">
@@ -44,20 +75,34 @@ const IndexPage = () => (
     </Flex>
     {/* Docs */}
     <Flex justifyContent="center" alignItems="center" mt="100px">
-      <Button w="200px">
-        <Link to="/docs" style={{ textDecoration: 'none', color: theme.colors.white }}>
-          Read Docs
-        </Link>
+      <Button
+        w="200px"
+        is={Link}
+        to="/docs"
+        textDecoration="none"
+        color={theme.colors.white}
+      >
+        Read Docs
       </Button>
     </Flex>
     {/* Components */}
-    <Flex justifyContent="center" alignItems="center" mt="100px" flexDirection="column">
+    <Flex
+      justifyContent="center"
+      alignItems="center"
+      mt="100px"
+      flexDirection="column"
+    >
       <Text f="30px" textTransform="uppercase" fontWeight="700" mb="50px">
         Installation
       </Text>
       <code style={{ padding: '30px' }}>yarn add @elementary/components</code>
     </Flex>
-    <Flex justifyContent="center" alignItems="center" mt="100px" flexDirection="column">
+    <Flex
+      justifyContent="center"
+      alignItems="center"
+      mt="100px"
+      flexDirection="column"
+    >
       <Text f="30px" textTransform="uppercase" fontWeight="700" mb="50px">
         Getting Started
       </Text>
