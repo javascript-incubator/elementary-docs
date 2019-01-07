@@ -66,10 +66,7 @@ const SecondPage = () => (
     >
       <Item C={<Button>Click Me!</Button>} name="Button" />
       <Item C={<Text>Elementary! My dear Watson</Text>} name="Text" />
-      <Item
-        C={<Truncate w="250px">I got 99 problems but that bitch</Truncate>}
-        name="Truncate"
-      />
+      <Item C={<Truncate w="110px">Avada Kedavra</Truncate>} name="Truncate" />
       <Item C={<Image h="75px" src={Prism} />} name="Image" />
       <Item
         C={
@@ -127,12 +124,12 @@ const SecondPage = () => (
         name="Absolute and Relative"
       />
     </Grid>
-    <Flex justifyContent="center" alignItems="center" mt="50px">
+    {/* <Flex justifyContent="center" alignItems="center" mt="50px">
       <Text tt="uppercase" fontWeight="700">
         Proper
       </Text>
-    </Flex>
-    <Grid
+    </Flex> */}
+    {/* <Grid
       gridTemplateRows="1fr 1fr 1fr"
       gridTemplateColumns="1fr 1fr 1fr"
       m="50px"
@@ -211,7 +208,7 @@ const SecondPage = () => (
         }
         name="accessRaw"
       />
-    </Grid>
+    </Grid> */}
   </Layout>
 )
 
